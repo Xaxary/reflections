@@ -17,3 +17,8 @@ What value do you think it offers?
 Staging allows you to, for instance not resend a 1gb data file with each commit, to have private log files / data / instances that aren't uploaded to a common server. To batch uploads, focusing on the relevant files each time
 e.g. A & B are UX files one stage, C&D are backend second stage...
 
+How can you use the staging area to make sure you have one commit per logical change?
+You can stage things in logical batches (rather than a whole bunch of stuff at once...)
+Git has some nice tools to help keep track of what has changed,(git status) 
+and even to figure out how it changed (git diff)
+
