@@ -1,0 +1,8 @@
+What happens when you initialize a repository? 
+it creates the git framework inside of 
+.git
+in the main directory
+
+Why do you need to do it?
+to setup / configure git to be ready to do all the gitty things 
+it shall do
