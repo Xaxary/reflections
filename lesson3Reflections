@@ -2,3 +2,8 @@ when would you want to create a repository rather than keeping all your work loc
 
 pretty much when you want to store things carefully on the cloud... for backup
 to collaborate with anyone not on your shared computer / network...
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+What if someone else is messing with the remote, you'd be getting trouble a lot
+especially if they're editing a file you're also working on, things could change in the background in a way that you're entirely not ready to deal with.
+Also, what about say, huge files, that you might only want to pull when you're connected to free wifi
