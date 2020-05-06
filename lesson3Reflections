@@ -7,3 +7,9 @@ Why might you want to always pull changes manually rather than having Git automa
 What if someone else is messing with the remote, you'd be getting trouble a lot
 especially if they're editing a file you're also working on, things could change in the background in a way that you're entirely not ready to deal with.
 Also, what about say, huge files, that you might only want to pull when you're connected to free wifi
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks are only on github - they essentally make a copy in your repository linked to the original repository
+Clones are full copies without any linking - they can be done locally or local from remote 
+(I don't think you'd call a local to remote a clone - more like a push)
+Branches share all of the commits up until the branch point - they can be local or remote, 
