@@ -1,0 +1,56 @@
+What happens when you initialize a repository? 
+it creates the git framework inside of 
+.git
+in the main directory
+
+Why do you need to do it?
+to setup / configure git to be ready to do all the gitty things 
+it shall do
+
+How is the staging area different from the working directory and the repository? 
+Staging area only contains those files we choose for it to contain...
+Working directory may contain many more files
+Repository contains version history comments, other metadata,
+    and also only stores things that have been added    
+
+What value do you think it offers?
+Staging allows you to, for instance not resend a 1gb data file with each commit, to have private log files / data / instances that aren't uploaded to a common server. To batch uploads, focusing on the relevant files each time
+e.g. A & B are UX files one stage, C&D are backend second stage...
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can stage things in logical batches (rather than a whole bunch of stuff at once...)
+Git has some nice tools to help keep track of what has changed,(git status) 
+and even to figure out how it changed (git diff)
+
+What are some situations when branches would be helpful in keeping your history organized? 
+Obviously when creating a different version from the main one
+Either an experimental version, or one that adaps the original features
+into a new application (imagine branching an nn, and tweaking that pre-built code)
+Also, for having an alpha, beta, and stable release
+
+How would branches help?
+Basically by letting separate programs evolve in separate directions, there wouldn't necessarily be a lot of rewinding and resetting...
+Could have many many versions
+
+How do the diagrams help you visualize the branch structure?
+You can see when and where different branches were spawned,
+this can also show you lost nodes etc..
+
+What is the result of merging two branches together?
+The code is shuffled together to try to keep all of the meaningful changes
+specifically it keeps
+shared code
+unique deletes
+unique adds
+
+Why do we represent it in the diagram the way we do?
+The coins and master "merged" becoming one thing so we show them together
+also, master is now head of two things...
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Auto merging can save a lot of time, and in cases where the changes really do function independently of each other, will be very effect...
+It can run into problems by potentially merging incompatible code (being too permissive) because it doesn't have any understanding of the code being merged.
+Pro is also to see conflicts quickly and easily...
+Manual merges would require code to be reviewed and so are possibly safer, and even potentially faster as no errors might be introduced
+
